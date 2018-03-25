@@ -1,6 +1,17 @@
-require 'sinatra/base'
-require 'sinatra/reloader'
-require 'dotenv/load'
+require "sinatra/base"
+require "sinatra/reloader"
+require "dotenv/load"
+
+# Ruboty
+require "ruboty"
+require "ruboty/alias"
+require "ruboty/cron"
+require "ruboty/echo"
+require "ruboty/redis"
+require "ruboty/ruby"
+require "ruboty/syoboi_calendar"
+require "ruboty/talk"
+
 require_relative "./lib/sagiri"
 
 class App < Sinatra::Base
@@ -10,7 +21,7 @@ class App < Sinatra::Base
 
   set :root, File.dirname(__FILE__)
 
-  robot = nil
+  robot   = Sagiri::Robot.new
   manager = Sagiri::Manager.new(robot)
 
   manager.bots.each do |key, bot|
@@ -24,6 +35,6 @@ class App < Sinatra::Base
   end
 
   error 400 do
-    'Bad Request'
+    "Bad Request"
   end
 end
