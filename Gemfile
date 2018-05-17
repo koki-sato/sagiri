@@ -10,7 +10,7 @@ gem "ruboty-cron"
 gem "ruboty-echo"
 gem "ruboty-redis"
 gem "ruboty-ruby"
-gem "ruboty-slack"
+gem "ruboty-slack_rtm"
 gem "ruboty-syoboi_calendar"
 gem "ruboty-talk"
 
