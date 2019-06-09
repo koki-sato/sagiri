@@ -1,0 +1,25 @@
+# Ruby CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-ruby/ for more details
+#
+version: 2
+jobs:
+  bundle-update:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: gem install -N circleci-bundle-update-pr
+      - run: circleci-bundle-update-pr $GITHUB_NAME $GITHUB_EMAIL
+workflows:
+  version: 2
+  auto-bundle-update:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - bundle-update
