@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.0)
+    activesupport (5.2.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -10,7 +10,7 @@ GEM
     chrono (0.4.0)
       activesupport
     coderay (1.1.2)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.5)
     docomoru (0.1.4)
       activesupport
       faraday
@@ -21,7 +21,7 @@ GEM
     dotenv (2.4.0)
     event_emitter (0.2.6)
     eventmachine (1.2.7)
-    faraday (0.15.1)
+    faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.10.1)
       faraday (>= 0.7.4, < 1.0)
@@ -29,7 +29,7 @@ GEM
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
     hashie (3.5.7)
-    i18n (1.0.1)
+    i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     json (2.1.0)
     line-bot-api (1.2.2)
@@ -38,7 +38,7 @@ GEM
     minitest (5.11.3)
     multi_json (1.13.1)
     multi_xml (0.6.0)
-    multipart-post (2.0.0)
+    multipart-post (2.1.1)
     mustermann (1.0.2)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -70,7 +70,7 @@ GEM
       ruboty
     ruboty-ruby (0.0.2)
       ruboty
-    ruboty-slack_rtm (3.1.0)
+    ruboty-slack_rtm (3.1.1)
       faraday (~> 0.11)
       ruboty (>= 1.1.4)
       slack-api (~> 1.6)
@@ -110,7 +110,7 @@ GEM
     tilt (2.0.8)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    websocket (1.2.5)
+    websocket (1.2.8)
     websocket-client-simple (0.3.0)
       event_emitter
       websocket
