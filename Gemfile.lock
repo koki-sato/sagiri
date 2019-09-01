@@ -1,11 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.3)
+    activesupport (6.0.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+      zeitwerk (~> 2.1, >= 2.1.8)
     backports (3.15.0)
     chrono (0.4.0)
       activesupport
@@ -25,7 +26,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.10.1)
       faraday (>= 0.7.4, < 1.0)
-    faye-websocket (0.10.8)
+    faye-websocket (0.10.9)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
     hashie (3.6.0)
@@ -70,7 +71,7 @@ GEM
       ruboty
     ruboty-ruby (0.0.2)
       ruboty
-    ruboty-slack_rtm (3.1.1)
+    ruboty-slack_rtm (3.2.0)
       faraday (~> 0.11)
       ruboty (>= 1.1.4)
       slack-api (~> 1.6)
@@ -99,7 +100,7 @@ GEM
       faraday_middleware (~> 0.10.0)
       faye-websocket (~> 0.10.6)
       multi_json (~> 1.0, >= 1.0.3)
-    slop (4.6.2)
+    slop (4.7.0)
     syoboi_calendar (0.3.1)
       activesupport
       faraday
@@ -117,6 +118,7 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
+    zeitwerk (2.1.9)
 
 PLATFORMS
   ruby
