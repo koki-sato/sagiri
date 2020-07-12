@@ -19,7 +19,7 @@ GEM
       json
       rack
       slop
-    dotenv (2.7.5)
+    dotenv (2.7.6)
     event_emitter (0.2.6)
     eventmachine (1.2.7)
     faraday (0.17.3)
