@@ -33,7 +33,7 @@ GEM
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     json (2.3.0)
-    line-bot-api (1.13.0)
+    line-bot-api (1.17.0)
     mem (0.1.5)
     method_source (0.9.2)
     minitest (5.14.0)
